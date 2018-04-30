@@ -5,6 +5,8 @@ can then be wrapped in a WSGI, NGINX docker ready for production.
 
 For the list of words I have used `/usr/share/dict/words` found on most Linux systems. 
 
+![Swagger example](swagger.png)
+
 # Testing
 To test the application locally, then run `app/main.py` and access the url: http://127.0.0.1:5000
 
