@@ -1,10 +1,11 @@
 # Introduction
 This is a very simple example of an Flask based API on top of a python application. For this toy example I have a
 written a simple XKCD style password generator and wrapped it in a flask API with a Swagger UI interface. The Flask API
-can then be wrapped in a WSGI, NGINX docker ready for production.
+can then be wrapped in a WSGI, NGINX docker ready for production. 
 
-For the list of words I have used `/usr/share/dict/words` found on most Linux systems. 
+For the list of words used in the password generator I have used `/usr/share/dict/words` found on most Linux systems. 
 
+Below is a an example of the Swagger UI which provides really nice interface to the API. 
 ![Swagger example](swagger.png)
 
 # Testing
