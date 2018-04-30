@@ -6,8 +6,8 @@ import numpy as np
 def generate_passwords(words=4, amount=10):
     '''Generates a XKCD style password with a number of words. Returns a list of amount pass phrases '''
 
-    # Get a list of words from the OS
-    with open('/usr/share/dict/words') as f:
+    # Get a list of words
+    with open('words.txt') as f:
         wordlist = [word.strip().replace("'","") for word in f]
 
     # Return a list of passwords of strings
