@@ -6,15 +6,19 @@ can then be wrapped in a WSGI, NGINX docker ready for production.
 For the list of words I have used `/usr/share/dict/words` found on most Linux systems. 
 
 # Testing
-To test the application locally, then run `app/main.py` and access the url: 
-```http://127.0.0.1:5000```
+To test the application locally, then run `app/main.py` and access the url: http://127.0.0.1:5000
 
 # Docker container
 Run the following command to build the Docker image
-```docker build -t pw_api:0.1 .```
+
+```python
+docker build -t pw_api:0.1 .
+```
 
 Initialize a instance of the image 
-```docker run -d -p 80:80 pw_api:0.1```
 
-Access the container in a browser on port 80
-```http://127.0.0.1/```
+```python
+docker run -d -p 80:80 pw_api:0.1
+```
+
+Access the container in a browser on port 80: http://127.0.0.1/
